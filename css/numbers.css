@@ -1,12 +1,8 @@
 body{
-
   background-color: #1e1e1e;
-  
     margin: auto;
     height: 10;
     font-family: Arial, Helvetica, sans-serif;
-   
-  
 }
 
 .line{
@@ -14,8 +10,8 @@ width: 500px;
 height: 20px;
 margin: auto;
 background-color: aquamarine;
-
 }
+
 p {
   color: aliceblue;
   text-align:center ;
@@ -24,5 +20,4 @@ p {
   letter-spacing: 50px;
   text-indent: 50px;
   margin: 5px 0;
- 
 }
