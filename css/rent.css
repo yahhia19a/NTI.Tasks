@@ -133,7 +133,7 @@ align-items: end;
     background: white;
     border-radius: 10px;
     padding: 15px;
-    width: calc(25%-15px); 
+    width: 20%; 
     min-height: 340px;
 
     display: flex;
@@ -274,5 +274,53 @@ button {
     margin-left: 20px;
     text-decoration: none;
     color: #1A202C;
+}
+
+
+.hero {
+    display: flex;
+    gap: 20px;
+    padding: 40px 7% 10px;
+}
+
+.hero-card {
+    flex: 1;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    min-height: 180px;
+}
+
+
+.hero-left {
+    background-color: #54A6FF;
+}
+.hero-right {
+    background-color: #3563E9;
+
+}
+
+.hero-content h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.hero-right button {
+    background-color: #54A6FF;
+    color: #3563E9;
+    font-size: 12px;
+}
+
+.hero-card img {
+    width: 180px;
+    height: auto;
 }
 
