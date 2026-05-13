@@ -20,9 +20,10 @@ else if(BMI>=35.0 && BMI<=39.9999){
    result="Obesity Class II"
 }
 else{result="Obesity Class III"}
-console.log(result)*/
+console.log(result)
+*/
 
-let year = prompt("Enter Birth Year")
+/*let year = prompt("Enter Birth Year")
 let equ = year % 12
 console.log(equ)
 let result
@@ -41,5 +42,93 @@ switch (equ) {
     case (11): result = "Tigiriii"; break;
 
 }
-
 console.log(result)
+*/
+
+
+/*let user= {
+   name:"yahia",
+   age=20,
+   showData:function(){
+      console.log(this)
+   }
+};
+
+let users= {
+   showData:function(){
+      console.log(this)
+   },
+   printMe:() => {
+      console.log(this) //global window
+
+   }
+};
+user.showData()
+user.printMe()
+
+const z =(a,b) => a+b
+console.log(y(5,3))
+
+*/
+
+/*const add=function(v){
+let res=0
+for(let i=0; i<v.length; i++){
+   res+=v[i]
+}
+return res
+}
+
+
+
+ let count= +prompt("Enter count of numbers to be added:"), val=[];
+ for(let i=0;i<count;i++){
+   val.push(+prompt("Enter number:"))
+ }
+
+
+ console.log(add(val))
+*/
+
+/*let d =document.getElementById("data")
+
+let btn= document.getElementById("showhide")
+
+btn.addEventListener("click" ,function(){
+d.classList.toggle("d-none")
+
+if( btn.textContent=="show"){
+
+   btn.textContent="hide"
+   btn.className="btn btn-danger"
+}
+else{
+   btn.textContent="show"
+   btn.className="btn btn-success"
+}
+})
+
+let x = document.querySelector("div.toto")
+*/
+
+let headers = document.querySelectorAll(".header");
+    let contents = document.querySelectorAll(".content");
+
+    headers.forEach((h, i) => {
+
+      h.addEventListener("click", function () {
+
+        // check if current content is already open
+        let isOpen = !contents[i].classList.contains("d-none");
+
+        // close all
+        contents.forEach((c) => c.classList.add("d-none"));
+
+        // if it was closed before, open it
+        if (!isOpen) {
+          contents[i].classList.remove("d-none");
+        }
+
+      });
+
+    });
